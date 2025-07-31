@@ -2,50 +2,404 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tarunvidyut Ravisankar - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+    rel="stylesheet" />
 </head>
 
-<body>
-  <header>
-    <h1>Tarunvidyut Ravisankar</h1>
-    <p>Student | Developer | Data Analyst</p>
+<body id="top" class="dark_theme">
+  <header class="header" data-header>
+    <div class="container">
+      <h1 class="h1 logo"><a href="#">Tarunvidyut Ravisankar<span>.</span></a></h1>
+
+      <div class="navbar-actions">
+        <select name="language" id="lang">
+          <option value="en">En</option>
+          <option value="ar">Ar</option>
+        </select>
+
+        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+          <span class="icon"></span>
+        </button>
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-link">Home.</a></li>
+          <li><a href="#about" class="navbar-link">About.</a></li>
+          <li><a href="#skills" class="navbar-link">Skills.</a></li>
+          <li><a href="#portfolio" class="navbar-link">Portfolio.</a></li>
+          <li><a href="#contact" class="navbar-link">Contact.</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a high school senior passionate about computer science, data analysis, and building systems that improve people's lives. I’ve interned at RealAI Dynamics and worked with Scrub Board Laundry to build web solutions that drove real-world impact.</p>
-  </section>
+  <main>
+    <article class="container">
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <figure class="hero-banner">
+          <picture>
+            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)" />
+            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)" />
+            <img src="./assets/images/hero-banner-sm.png" alt="Portrait of Tarunvidyut" class="w-100" />
+          </picture>
+        </figure>
 
-  <section id="projects">
-    <h2>Projects</h2>
+        <div class="hero-content">
+          <h2 class="h2 hero-title">I Build Intelligent Systems & Web Solutions</h2>
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+        </div>
 
-    <div class="project">
-      <h3>Bike Data Case Study</h3>
-      <p>I conducted a comprehensive analysis for a company using R and Google Sheets. My goal was to compare casual riders and members, uncover usage patterns, and generate insights to guide business decisions.</p>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ5PDg93wB33xSsag54BQWpkyjfKwyLJYf67P7Y3r2btnuTzJzPkuSza-fnmna9iwSDCDbTFCU8S-Fx/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <ul class="hero-social-list">
+          <li>
+            <a href="https://facebook.com/tarunvidyut" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <div class="tooltip">Facebook</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/tarunvidyut" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-twitter"></ion-icon>
+              <div class="tooltip">Twitter</div>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/tarunvidyut" class="hero-social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+              <div class="tooltip">Linkedin</div>
+            </a>
+          </li>
+        </ul>
+
+        <a href="#stats" class="scroll-down">Scroll</a>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats" id="stats">
+        <ul class="stats-list">
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon" />
+              </div>
+              <h2 class="h2 card-title">
+                3+ <strong>Years of Experience</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon" />
+              </div>
+              <h2 class="h2 card-title">
+                10+ <strong>Completed Projects</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="stats-card">
+              <div class="card-icon">
+                <img src="./assets/images/stats-card_icon-3.png" alt="People rating icon" />
+              </div>
+              <h2 class="h2 card-title">
+                8+ <strong>Happy Clients</strong>
+              </h2>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="about">
+        <figure class="about-banner">
+          <img src="./assets/images/about-banner.png" alt="Portrait of Tarunvidyut" class="w-100" />
+        </figure>
+
+        <div class="about-content section-content">
+          <p class="section-subtitle">About Me</p>
+          <h2 class="h3 section-title">Passionate About Building Creative Tech Solutions</h2>
+          <p class="section-text">
+            I’m a high school senior passionate about computer science, data analysis, and building systems that improve people's
+            lives. I’ve interned at RealAI Dynamics and built impactful web solutions for local businesses. Constantly
+            learning and innovating, I enjoy turning data into actionable insights.
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-secondary">Hire me</button>
+            <button class="btn btn-primary">Download CV</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills" id="skills">
+        <div class="skills-content section-content">
+          <p class="section-subtitle">My Skills</p>
+          <h2 class="h3 section-title">Technologies I Use to Build</h2>
+          <p class="section-text">
+            I develop clean, responsive, and intuitive interfaces and tools using a variety of modern programming languages and
+            frameworks.
+          </p>
+
+          <div class="skills-toggle" data-toggle-box>
+            <button class="toggle-btn active" data-toggle-btn>Skills</button>
+            <button class="toggle-btn" data-toggle-btn>Tools</button>
+          </div>
+        </div>
+
+        <div class="skills-box" data-skills-box>
+          <ul class="skills-list">
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">HTML5</div>
+                <div class="card-icon"><img src="./assets/images/html5.png" alt="HTML5 logo" /></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">JavaScript</div>
+                <div class="card-icon"><img src="./assets/images/javascript.png" alt="JavaScript logo" /></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">R</div>
+                <div class="card-icon"><img src="./assets/images/r.png" alt="R logo" /></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Python</div>
+                <div class="card-icon"><img src="./assets/images/python.png" alt="Python logo" /></div>
+              </div>
+            </li>
+            <!-- Add other skills as needed -->
+          </ul>
+
+          <ul class="tools-list">
+           
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">VS Code</div>
+                <div class="card-icon"><img src="./assets/images/vs-code.png" alt="VS Code logo" /></div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-card">
+                <div class="tooltip">Google Sheets</div>
+                <div class="card-icon"><img src="./assets/images/sheets.png" alt="Google Sheets logo" /></div>
+              </div>
+            </li>
+            <!-- Add other tools as needed -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section class="project" id="portfolio">
+        <ul class="project-list">
+          <li>
+            <div class="project-content section-content">
+              <p class="section-subtitle">My Works</p>
+              <h2 class="h3 section-title">See My Projects That Make an Impact</h2>
+              <p class="section-text">
+                I develop clean, user-friendly applications and data-driven solutions to solve real-world problems with clarity and
+                precision.
+              </p>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="card-content">
+              <h3 class="h4 card-title">Bike Data Case Study</h3>
+              <p>
+                Analyzed bike usage data to identify trends between casual riders and members, generating insights for business
+                strategy using R and Google Sheets.
+              </p>
+              <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vQ5PDg93wB33xSsag54BQWpkyjfKwyLJYf67P7Y3r2btnuTzJzPkuSza-fnmna9iwSDCDbTFCU8S-Fx/pubembed?start=true&loop=true&delayms=3000"
+                frameborder="0" width="960" height="569" allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="card-content">
+              <h3 class="h4 card-title">Cybersecurity Game: Phishing Scam Tester</h3>
+              <p>
+                Built an interactive web game educating users on phishing scam identification using HTML, CSS, and JavaScript,
+                deployed via GitHub Pages.
+              </p>
+            </div>
+          </li>
+
+          <li class="project-card">
+            <div class="card-content">
+              <h3 class="h4 card-title">Scrub Board Laundry Website</h3>
+              <p>
+                Designed and developed a modern website for a local laundry business that boosted customer engagement and revenue.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contact">
+        <div class="contact-content section-content">
+          <p class="section-subtitle">Contact</p>
+          <h2 class="h3 section-title">Have Any Project? Please Drop a Message</h2>
+          <p class="section-text">
+            Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.
+          </p>
+
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
+                <address class="contact-info">Frisco, TX</address>
+              </div>
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Phone:</h3>
+                <a href="tel:+1234567890" class="contact-info">+1 (469)-307-0563</a>
+              </div>
+            </li>
+
+            <li class="contact-list-item">
+              <div class="contact-item-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Email:</h3>
+                <a href="mailto:tarun.vidyut@gmail.com" class="contact-info">tarun.vidyut@gmail.com</a>
+              </div>
+            </li>
+
+            <li>
+              <ul class="contac-social-list">
+                <li>
+                  <a href="https://facebook.com/tarunvidyut" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+                    <div class="tooltip">Facebook</div>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/tarunvidyut" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+                    <div class="tooltip">Twitter</div>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/tarunvidyut" class="contact-social-link" target="_blank" rel="noopener noreferrer">
+                    <div class="tooltip">Linkedin</div>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <form action="#" class="contact-form">
+          <div class="form-wrapper">
+            <label for="name" class="form-label">Name</label>
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field" />
+              <ion-icon name="person-circle"></ion-icon>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="email" class="form-label">Email</label>
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com" class="input-field" />
+              <ion-icon name="mail"></ion-icon>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="phone" class="form-label">Phone</label>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field" />
+              <ion-icon name="call"></ion-icon>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="message" class="form-label">Message</label>
+            <div class="input-wrapper">
+              <textarea
+                name="message"
+                id="message"
+                required
+                placeholder="Write message..."
+                class="input-field"
+              ></textarea>
+              <ion-icon name="chatbubbles"></ion-icon>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="h1 logo">
+        <a href="#">
+          Tarunvidyut Ravisankar<span>.</span>
+        </a>
+      </p>
+      <p class="copyright">&copy; 2025 Tarunvidyut. All rights reserved</p>
     </div>
+  </footer>
 
-    <div class="project">
-      <h3>Cybersecurity Game: Phishing Scam Tester</h3>
-      <p>Collaborated with a mentor to build an interactive web-based game that educates users on how to identify phishing emails and protect their personal information. The game was developed using HTML, CSS, and JavaScript and deployed through GitHub Pages.</p>
-    </div>
+  <a href="#top" class="go-top" data-go-top title="Go to Top">
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
 
-    <div class="project">
-      <h3>Scrub Board Laundry Website</h3>
-      <p>Developed a modern, user-friendly website for a local laundry business, resulting in increased customer engagement and revenue.</p>
-    </div>
+  <!-- custom js -->
+  <script src="./assets/js/script.js"></script>
 
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: tarunvidyutr@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/tarunvidyut" target="_blank">github.com/tarunvidyut</a></p>
-  </section>
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
+
